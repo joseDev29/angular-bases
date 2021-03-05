@@ -1,0 +1,31 @@
+<h1>Shingeki No Kyojin</h1>
+<hr />
+<div class="row">
+  <div class="col">
+    <app-personajes></app-personajes>
+  </div>
+  <div class="col">
+    <app-agregar></app-agregar>
+    <!--<app-agregar [nuevo]="nuevo"></app-agregar>-->
+  </div>
+</div>
+
+<!-- Otra forma de escuchar el submit del form -->
+<!--<form (submit)="agregar($event)">
+    <input type="text" placeholder="Nombre" />
+    <input type="number" placeholder="Poder" />
+    <button type="submit">Agregar</button>
+  </form>-->
+
+<!-- Otra forma de escuchar el input event -->
+<!--
+    <form (ngSubmit)="agregar()">
+      <input
+        type="text"
+        [value]="nuevo.nombre"
+        (input)="cambiarNombre($event)"
+      />
+      <input type="text" placeholder="Poder" [value]="nuevo.poder" />
+      <button type="submit">Agregar</button>
+    </form>
+  -->
